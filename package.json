@@ -1,0 +1,47 @@
+{
+  "name": "dsh-stageshow",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ships the Stageshow skill (faux product UI illustrations in React) as a DSH skill, vendored byte-identical from benjitaylor/skills.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrischen/dsh-stageshow.git"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    "UPSTREAM.lock.json",
+    "CHANGELOG.md",
+    "skills"
+  ],
+  "scripts": {
+    "test": "node --test test/",
+    "lock:build": "node scripts/build-lock.mjs"
+  },
+  "dependencies": {
+    "yaml": "^2.4.2"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

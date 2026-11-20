@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-stageshow
+      name: 'dsh-stageshow'
+      config: {}
