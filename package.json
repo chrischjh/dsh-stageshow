@@ -34,7 +34,7 @@
     "skills"
   ],
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test",
     "lock:build": "node scripts/build-lock.mjs"
   },
   "dependencies": {
