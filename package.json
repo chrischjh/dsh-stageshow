@@ -6,8 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrischen/dsh-stageshow.git"
+    "url": "git+https://github.com/chrischjh/dsh-stageshow.git"
   },
+  "bugs": {
+    "url": "https://github.com/chrischjh/dsh-stageshow/issues"
+  },
+  "homepage": "https://github.com/chrischjh/dsh-stageshow#readme",
   "engines": {
     "node": ">=20.19"
   },
